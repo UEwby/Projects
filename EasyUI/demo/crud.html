@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>jQuery EasyUI CRUD Demo</title>
+    <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.5.2/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.5.2/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../default/css/demo.css">
+    <style type="text/css">
+        #fm{
+            margin:0;
+            padding:10px 30px;
+        }
+        .ftitle{
+            font-size:14px;
+            font-weight:bold;
+            color:#666;
+            padding:5px 0;
+            margin-bottom:10px;
+            border-bottom:1px solid #ccc;
+        }
+        .fitem{
+            margin-bottom:5px;
+        }
+        .fitem label{
+            display:inline-block;
+            width:80px;
+        }
+    </style>
+    <script type="text/javascript" src="../jquery-easyui-1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../jquery-easyui-1.5.2/jquery.easyui.min.js"></script>
+    <script type="text/javascript">
+        var users = [
+            {id:'1', firstname:'firstname1', lastname:'lastname1', phone:'(000)000-0001', email:'name1@gmail.com'},
+            {id:'2', firstname:'firstname2', lastname:'lastname1', phone:'(000)000-0002', email:'name1@gmail.com'},
+            {id:'3', firstname:'firstname3', lastname:'lastname3', phone:'(000)000-0003', email:'name3@gmail.com'},
+            {id:'4', firstname:'firstname4', lastname:'lastname4', phone:'(000)000-0004', email:'name4@gmail.com'},
+            {id:'5', firstname:'firstname5', lastname:'lastname5', phone:'(000)000-0005', email:'name5@gmail.com'},
+            {id:'6', firstname:'firstname6', lastname:'lastname6', phone:'(000)000-0006', email:'name6@gmail.com'},
+            {id:'7', firstname:'firstname7', lastname:'lastname7', phone:'(000)000-0007', email:'name7@gmail.com'},
+            {id:'8', firstname:'firstname8', lastname:'lastname8', phone:'(000)000-0008', email:'name8@gmail.com'},
+            {id:'9', firstname:'firstname9', lastname:'lastname9', phone:'(000)000-0009', email:'name9@gmail.com'},
+            {id:'10', firstname:'firstname10', lastname:'lastname10', phone:'(000)000-0010', email:'name10@gmail.com'}
+        ];
+
+
+    </script>
+
+</head>
+<body>
+    <table id="dg" title="My Users" class="easyui-datagrid" style="width:700px;height:250px"
+           toolbar="#toolbar" pagination="true"
+           rownumbers="true" fitColumns="true" singleSelect="true">
+        <thead>
+        <tr>
+            <th field="firstname" width="50">First Name</th>
+            <th field="lastname" width="50">Last Name</th>
+            <th field="phone" width="50">Phone</th>
+            <th field="email" width="50">Email</th>
+        </tr>
+        </thead>
+    </table>
+</body>
+</html>
